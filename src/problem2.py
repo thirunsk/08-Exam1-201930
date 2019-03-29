@@ -3,8 +3,8 @@ Exam 1, problem 2.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Ram.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -44,7 +44,40 @@ def test_factor_sum():
     ###########################################################################
     # WRITE YOUR TESTS BELOW HERE:
     ###########################################################################
+    # Test 1:
+    expected = 11
+    actual = factor_sum(28)
+    print()
+    print('Test 1 Expected:', expected)
+    print('Actual:  ', actual)
 
+    # Test 2:
+    expected = 4
+    actual = factor_sum(25)
+    print()
+    print('Test 2 Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 3:
+    expected = 8
+    actual = factor_sum(20)
+    print()
+    print('Test 1 Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 4:
+    expected = 9
+    actual = factor_sum(30)
+    print()
+    print('Test 1 Expected:', expected)
+    print('Actual:  ', actual)
+
+    # Test 5:
+    expected = 9
+    actual = factor_sum(10)
+    print()
+    print('Test 1 Expected:', expected)
+    print('Actual:  ', actual)
 
 def factor_sum(n):
     """
@@ -69,11 +102,16 @@ def factor_sum(n):
     so this function returns 4 when n is 28.
 
        *** ASK FOR AN EXPLANATION IF YOU DO NOT UNDERSTAND THE ABOVE. ***
+
     """
     ###########################################################################
     #  This function is PURPOSELY implemented INCORRECTLY (it just returns 0).
     #  DO NOT IMPLEMENT  factor_sum.  Just leave it as it is (returning 0).
     ###########################################################################
+
+
+
+
     return 0
     ###########################################################################
     # DO NOT modify the above line of code!

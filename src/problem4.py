@@ -3,8 +3,8 @@ Exam 1, problem 4.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Ram.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -80,10 +80,46 @@ def problem4(point1, point2, n, window):
       :type window:  rg.RoseWindow
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # IMPORTANT: For PARTIAL CREDIT, ignore the colors.
     # -------------------------------------------------------------------------
+
+
+    m = (point2.y-point1.y)/(2*n+1)
+    q = (point2.x-point1.x)/(2*n+1)
+
+    for k in range((2*n+1)):
+        a = rg.Point(point1.x+q*(k), point1.y+m*(k))
+        if n == 5:
+            if k > 5:
+                a.fill_color = 'red'
+        if n == 2:
+            if k > 2:
+                a.fill_color = 'yellow'
+            else:
+                a.fill_color = 'gray'
+        if n== 15:
+            if k > 15:
+                a.fill_color = 'magenta'
+            else:
+                a.fill_color = 'cyan'
+
+                #if n<=10:
+        #    a.fill_color = 'black'
+        #if n>10:
+        #    a.fill_color = 'red'
+        a.attach_to(window)
+
+
+    point1.attach_to(window)
+    point2.attach_to(window)
+    window.render()
+
+        # b = rg.Point(point2.x,point2.y)
+        # b.fill_color = 'green'
+        #b.attach_to(window)
+
 
 
 # -----------------------------------------------------------------------------
